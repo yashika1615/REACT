@@ -2,4 +2,65 @@ what is react ? -
  raect is an open source javascript library developed by facebook.
 it is used for building interactive user interfaces and web applications quickly and effectively.
 
+how react is different from cobentinal js?
+  SPA -single page application
+  since it is spa , no navigation this thing gets fast
+
+<ReactStrictMode> - at the time of development all the warnings and error aapko show ho sake 
+
+why is react a library and not a framework ?
+   
+library ko hum code ke andr call karte , install karte hain iski vajah se yeh replacable bhi hojati hain
+
+but , framework ek pura ka pura env provide karta hai jinke andr hum saara ka saara code likhte hain, uski features aur uski functionalities ko use krte hain aur usko replace krna itna asaan nhin hota
+
+why is react a library? 
+  its not a complete package acc to your needs or projects req you can install the libraries 
+
+another difference in react-
+  JSX- extension to javascript
+  in the end compile hoke final code jsx nhin ban rha voh javascript hi ban rha hai toh voh react saara internally karta hai babel karta hai , transpiler use hota hai 
+
+ advantages of react
+   1. easy to understand and easy to use
+   2. independent and reusable component based architecture
+   3. can code in js 
+   4. unit testing can be done easily with react testing library
+   5. Single page application
+
+disadvantages of react
+ 1. JSX adds complexity to learning react, esecially for beginners.
+ 2. the developers skills must always need to be updated along with the changes.
+ 3. ReactJs only covers the UI Layers of the app so there is always a need to choose some other technologies for other development.
+ 4. SPA are not seo friendly.
+
+components - independent and reusable bits of code
+
+class based components vs functional based components?
+
+class based components- state rakh sakte hain - also known as stateful components
+
+functional based components- state nhin rakh sakte - stateless components
+
+state- object that stores your  components properties
+whenever the state changes the component re-render.
+
+now the change has come, that even functional omponents can have state .
+i.e hooks have been introduced into the function based components which is why state  management into the functional components has become easy. The change has come after react v16.8.
+
+create react app- before that it is imp to have node js in your system
+
+node modules- all the dependencies req in the project are installed here
+
+package.json- all the dependencies along with their version are listed here
+
+app.js - application ka starting point 
+
+state management and set state in class based components
+  
+constructor function-
+   the constructor is called during component creation and before mounting.
+it is a method which is used to initialize an objects state in a class.
+the concept of a constructor is same in react.
+it can also be used to bind event handlers.
 
