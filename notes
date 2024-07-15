@@ -1,6 +1,25 @@
 what is react ? -
+  react is a js library created by facebook to create UI(user interface).
+  react is used to make a single page application 
+  react allows us to create reusable UI components.
  raect is an open source javascript library developed by facebook.
 it is used for building interactive user interfaces and web applications quickly and effectively.
+
+
+(1)React is an open source javascript library for building user interfaces.
+(2)React is a project created and maintained by Facebook.
+React has more than a 100 thousand stars on GitHub and a huge community behind it.
+(3)React has become increasingly popular among developers and is also one of the most sought out skill-sets by companies right now.
+(4)React has a component based architecture. This lets you break down your application into small encapsulated parts which can then be composed to make more complex UI.
+(5)React is declarative.
+(6)React will make it painless for you to create complex UIs by abstracting away the difficult parts. 
+(7)React will handle efficiently updating and rendering just the right components in your application when your data changes. 
+(8)DOM updates which is one of the more expensive operations is handled gracefully in React.
+
+what is single page applicatons ?
+  single page application also known as SPA in short, is an application that loads only a single document, and then updates the body content of the single document via JAVASCRIPT APIS.
+
+  benefits- allows users to usse websites without loading whole new pages, which results in performance gains and a more dynamic experience.
 
 how react is different from cobentinal js?
   SPA -single page application
@@ -34,7 +53,31 @@ disadvantages of react
  3. ReactJs only covers the UI Layers of the app so there is always a need to choose some other technologies for other development.
  4. SPA are not seo friendly.
 
+package.json- dependencies alonwith their versions are there
+node-modules- dependencies are installed there
+
+JSX- Javascript XML OR extension
+witht he help of jsx we can write and add html in react
+jsx xonverts html tags into react element.
+its not compulsory to use react
+
+rules for writing JSX
+ 1. Html code must wrap into one top level element.
+ 2. elements must be closed.
+ 3. attributes class= classname
+ 4. no if else condition inside jsx but ternary operator is okay
+ 5. js expression in jsx must wrapped in {}.
+
+
 components - independent and reusable bits of code
+they server the same purpose as javascript functions , but work in isolation and return html.
+
+components come intwo type class components and function components.
+
+         application
+            |
+    header   body    sidebar
+component-1 comp-2   comp-3
 
 class based components vs functional based components?
 
@@ -63,4 +106,117 @@ constructor function-
 it is a method which is used to initialize an objects state in a class.
 the concept of a constructor is same in react.
 it can also be used to bind event handlers.
+
+setstate- it is a method used to update the state of a component.
+
+the state in js object holds the dynamic data of the component and determines how the component renders and behaves . When the state changes , React re-renders the component to reflect the updated states.
+
+Here's an overview of how setState works:
+
+Basic Usage:
+You can pass an object to setState to update the component's state. React will merge the new state with the current state.
+
+javascript
+Copy code
+this.setState({ count: this.state.count + 1 });
+Functional Form:
+When you need to update the state based on the previous state, it's recommended to use the functional form of setState. This form ensures that you are working with the most current state, which is particularly important in asynchronous updates.
+
+javascript
+Copy code
+this.setState((prevState) => ({
+  count: prevState.count + 1
+}));
+Partial State Updates:
+setState only updates the specified properties in the state object and leaves the other properties unchanged. For example, if your state has multiple properties, updating one property won't affect the others.
+
+javascript
+Copy code
+this.setState({ count: 10 }); // Only updates 'count', other state properties remain the same
+Asynchronous Nature:
+setState may be asynchronous, meaning that multiple setState calls may be batched together for performance improvements. Due to this, you shouldn't rely on the state immediately after calling setState.
+
+javascript
+Copy code
+// Incorrect: This might not give the expected result due to batching
+this.setState({ count: this.state.count + 1 });
+console.log(this.state.count); // This might log the old state
+
+// Correct: Using the callback form ensures you work with the latest state
+this.setState((prevState) => ({ count: prevState.count + 1 }), () => {
+  console.log(this.state.count); // This logs the updated state
+});
+Callback Function:
+setState can accept a second argument, which is a callback function that gets executed after the state has been updated and the component has re-rendered.
+
+javascript
+Copy code
+this.setState({ count: this.state.count + 1 }, () => {
+  console.log('State updated:', this.state.count);
+});
+Example
+Here's a simple example that illustrates how setState works in a React component:
+
+javascript
+Copy code
+import React, { Component } from 'react';
+
+class Counter extends Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0,
+    };
+  }
+
+  increment = () => {
+    this.setState((prevState) => ({
+      count: prevState.count + 1
+    }));
+  }
+
+  render() {
+    return (
+      <div>
+        <button onClick={this.increment}>Increment</button>
+        <p>Count: {this.state.count}</p>
+      </div>
+    );
+  }
+}
+
+export default Counter;
+In this example:
+
+The initial state is set to { count: 0 }.
+The increment method updates the state using the functional form of setState.
+Each time the button is clicked, the increment method is called, updating the state and re-rendering the component to display the new count.
+
+if we will not use arrow function here, then the function will be called directly and will not wait for the button to get clicked. 
+  increment call ho rha  -> set update ho rhi -> re-render ho rha and then the process continue so it will go in infinite loop
+
+if we dont want to use arrow functions 
+this case component ko function ke saath bind kr sakte hain
+aur bind kahan kar sakte hain ? -
+  constructor function main
+
+call , apply and bind functions- functions that are used to define the context of this keyword that is used or sometimes change the context of this
+there are times when this is pointing to something else and we want it to point it to others so that it can scope from there and we can use it .
+
+call()-
+apply()-
+bind()-
+
+example:- 
+<!-- class SomeComponent extends Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0,
+    }
+    this.increment = this.increement.bind(this)
+  } -->
+
+
+
 

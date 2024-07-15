@@ -1,0 +1,81 @@
+REACT.js- javascript library for building fast and interactive UI and SPA's.
+developed by facebook in 2011.
+react js is the view layer of an mvc application(model view controller).
+declarative view:- react will efficiently update and render just the right components when your data changes.
+component based:- build encapsulated components that manage their own state, them compose them to make complex UIs.
+
+
+react is a free and open-ource front-end javascript library for building user interfaces based on UI components.
+it ismaintained by meta and a community of individual 
+developers and companies.
+# It is a library to build interactive web application
+# react was released in may 2013.
+# one of the most favourite framework for build web and mobile apps.
+
+react structure gets break down into simple and independent components
+
+
+
+IMPROVED PERFROMANCE OF USING VIRTUAL DOM
+REUSABLE components
+ uin-directional data flow
+
+ react has a shorter learning curve than other programming languages since developers dont have to spend as much time relearning the language.
+ to put it another way, react is based on what developers are already
+ familiar with javascript.
+
+ REASONS TO CHOOSE REACT?
+ - easy prodution of dynmaic apps
+ improved PERFROMANCE
+ resuable components
+ uni-directional data flow
+easy learning curve
+web and mobile apps
+easy debugging tools
+
+ARCHITECTURE(MVC)
+-model view controller
+so react is inside this V i.e view respnsible for how the app appears
+and feel .
+SO MVC is an ARCHITECTURal pattern that splits the application layer into model view and contoller 
+so model relate to all the data related logic , the view is used for the UI logic and the controller is the interface between the controller and the view.
+so react is basically a view part of your application.
+
+NPM- node package manager
+- npm is the package manager for the node javascript platform
+-it is built on top os node.javascript
+-it is the worlds's largest software registry
+
+package dependencies are everywhere
+
+dependency- is a third partty code that your application depends on
+
+package- the term package refers to code that has been made public
+- apackage might be made up of a single or more code files
+- a package , in general, aids you in adding functionality to your application
+- all of those files together make up the package
+
+your package may further depend on another packages
+
+problems without npm:
+- manually managing all apckage dependencies is a difficult operation that is not recommended because there is a high risk of breaking your application as it grows
+-there is no centralised location where you can check all of yours project dependencies and version
+-as we dont have that, sharing all dependencies with someone else is also a directional
+-tracking of unused packages is also tough
+
+we need a better solution to handle this
+for this we have package manager
+like npm, yarn
+
+NPM - NODE PACKAGE manager
+consists of twon main parts-
+- A CLI(COMMAND LINE INTERAFCE) tool for publishing and downloading packages, and
+-AN ONLINE REPO that hosts javascript packages
+
+package.json=> npm init- to create package.json
+-the projects's package.json file is intialised using npm init from the command LINE
+-this file contains details about the project, such as its name and version number.
+
+
+
+

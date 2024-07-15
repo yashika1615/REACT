@@ -1,0 +1,82 @@
+1. what is react
+2. how is react fast
+3. diff bw react and other frameworks like angular, vue etc.
+4. why react is SPA
+5. internal working of react
+6. what is virtual dom
+7. why other frameworks are not using virtual dom
+8. what is shallow dom(not related to reactjs)
+9. explain react lifecycle
+10. order of all lifecycle methods
+11. how it works in functional components
+12. tell about 
+    getDerivedStateFromProps(),
+    shouldComponentUpdate(),
+    getSnapshotBeforeUpdate()
+13. what are synthetic events in react ?
+   why they were introduced?
+14. diff between state and props?
+15. what are statefull and stateless components?
+16. what is jsx?
+17. what is react fragment and why do we use it 
+18. why do we use key in fragment ?
+19. what are higher order components? why are they used ?
+   advantages and disadvantages of hoc 
+   and fix for the disadv for hoc?
+20.what is prop drilling? how to fix that?
+21. what is state lifting in react ? give some practical scenario?
+22. what are react hooks ?
+23. why were hooks introduced in react
+24. what are the hooks that you have used ?
+25. Can we create our own hooks ?
+26. Give some scenario where we might need to create a custom hook ?
+27. what are controlled and uncontrolled components  give some examples?
+28. what is setState()?
+    how setState works?
+    is setState synchronous or asynchronous
+    what is the use of callbacks functions inside setState?
+    should we call it  inside render methods?
+29. what is the use of key in react 
+30. can we use index as an key
+31. in which situation should we not use index as a key
+32. what are the disadv of usinf index as key
+33. how to validate props in react
+34. what are pure components?
+    adv and disadv of the same ?
+35. what is use effect hook? how can we call it ony once>
+    what happens if we dont pass the dependency array?
+36. how to do cleanup in useEffect or how to use it like ComponentWillUnmount
+     How to call it on the basis of specific parameters?
+37. why functional components are better than class based components ?
+38. how to pass data from child omponent to parent component in react?
+39. diff ways to add styling in react components?
+40. what is better choice for react state management Context API OR Redux and why?
+41. what is react.Memo and why it is used?
+42. how is memoization done in react
+43. what is react router dom
+44. use of <switch>, use of exact etc.
+
+// REDUX INTERVIEW QUESTIONS
+
+45. what is the flow of Redux?
+    redux is maily based on these threee things
+    store->action->reducer but there is a connection in b/w these states.
+   without knowing this flow you will not be able to implement and understand 
+   redux.
+46. can we have multiple reducers? if yes then how 
+  can you create multiple reducers or do these reducers
+   create multiple states or create one combined states or what happens or what
+   happens in the background of it 
+47. can we have multiple stores in redux ?do they have multiple states?
+  how do you handle these kind of multiple stores in redux ?
+48. what is reducer in redux? 
+49. why reducer is a pure function ?
+50. why state is immutable in redux?
+51. what is redux middleware?
+   one of the adv of using redux as a library
+   it provides you middlewares
+52. diff b/w redux thunk and Saga - these are few of the middlewares redux provides
+53. how to connect react with redux 
+54. how can we access a redux store outside a react component?
+55. how can we add multiple middleware to redux?
+56. 
